@@ -6,10 +6,6 @@ public class List<T> {
 
     private ListN<T> front = null;
 
-    public boolean isEmpty() {
-        return (front == null);
-    }
-
 
     public void makeEmpty() {
         front = null;
