@@ -16,13 +16,12 @@ abstract class ShapeA {
         color=Color.BLACK;
     }
 
-    public ShapeA(int x1, int y1, int x2, int y2, Color color)
+    public ShapeA(int x1, int y1, int x2, int y)
     {
         this.x1=x1;
         this.y1=y1;
         this.x2=x2;
         this.y2=y2;
-        this.color=color;
     }
 
     public void setX1(int x1)
@@ -45,10 +44,6 @@ abstract class ShapeA {
         this.y2=y2;
     }
 
-    public void setColor(Color color)
-    {
-        this.color=color;
-    }
 
     public int getX1()
     {
@@ -70,9 +65,5 @@ abstract class ShapeA {
         return y2;
     }
 
-    public Color getColor()
-    {
-        return color;
-    }
     abstract public void draw( Graphics g );
 }
