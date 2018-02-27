@@ -3,7 +3,6 @@ package Graphics;
 import java.awt.Color;
 import java.awt.Graphics;
 import javax.swing.JPanel;
-import javax.swing.JLabel;
 import java.awt.BorderLayout;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseAdapter;
@@ -51,26 +50,26 @@ public class Panel extends JPanel{
                 case 0:
                     currentShapeObj= new Line( event.getX(), event.getY(), event.getX(), event.getY());
                     break;
-                /*case 1:
-                    currentShapeObj= new MyRectangle( event.getX(), event.getY(),
+                case 1:
+                    currentShapeObj= new Rectangle( event.getX(), event.getY(),
                             event.getX(), event.getY());
                     break;
                 case 2:
-                    currentShapeObj= new MyOval( event.getX(), event.getY(),
+                    currentShapeObj= new Oval( event.getX(), event.getY(),
                             event.getX(), event.getY());
                     break;
                 case 3:
-                    currentShapeObj= new MySquare( event.getX(), event.getY(),
+                    currentShapeObj= new Square( event.getX(), event.getY(),
                             event.getX(), event.getY());
                     break;
                 case 4:
-                    currentShapeObj= new MyCircle( event.getX(), event.getY(),
+                    currentShapeObj= new Circle( event.getX(), event.getY(),
                             event.getX(), event.getY());
                     break;
                 case 5:
-                    currentShapeObj= new MyTriangle( event.getX(), event.getY(),
+                    currentShapeObj= new Triangle( event.getX(), event.getY(),
                             event.getX(), event.getY());
-                    break;*/
+                    break;
 
             }
         }

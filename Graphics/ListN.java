@@ -4,9 +4,7 @@ public class ListN<T> {
     private T data;
     private ListN next;
 
-    public ListN( T nodeData ) {
-        this( nodeData, null);
-    }
+
 
     public ListN( T nodeData, ListN nodeNext ) {
         data = nodeData;
@@ -21,11 +19,4 @@ public class ListN<T> {
         return next;
     }
 
-    public void setData( T newData ) {
-        data = newData;
-    }
-
-    public void setNext( ListN newNext ) {
-        next = newNext;
-    }
 }
