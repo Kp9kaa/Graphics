@@ -14,6 +14,7 @@ public class Graphic extends JFrame{
     public Graphic(){
         super("Graphics");
         this.setBounds(100,100,1000,1000);
+        panel= new Panel();
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         widgetJPanel=new JPanel();
         widgetJPanel.setLayout(new GridLayout(1,6,10,10));
@@ -29,6 +30,23 @@ public class Graphic extends JFrame{
         ItemListenerHand handler = new ItemListenerHand();
 
         shapes.addItemListener(handler);
+    }
+    private class ItemListenerHand implements ItemListener
+    {
+        public void itemStateChanged( ItemEvent event )
+        {
+
+
+            if ( event.getStateChange() == ItemEvent.SELECTED )
+            {
+
+                if ( event.getSource() == shapes)
+                {
+                    panel.setCurrentShapeType(shapes.getSelectedIndex());
+                }
+            }
+
+        }
     }
 
 }

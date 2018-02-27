@@ -12,9 +12,10 @@ import java.util.ArrayList;
 public class Panel extends JPanel{
 
     private int currentShape;
-    myShapes = new LinkedList<ShapeA>();
+    private List<ShapeA> myShapes;
     private ShapeA currentShapeObj;
     public Panel(){
+        myShapes = new List<ShapeA>();
         currentShape=0;
         currentShapeObj=null;
         setLayout(new BorderLayout());
@@ -38,7 +39,6 @@ public class Panel extends JPanel{
     public void clearDrawing()
     {
         myShapes.makeEmpty();
-        clearedShapes.makeEmpty();
         repaint();
     }
     private class MouseH extends MouseAdapter
