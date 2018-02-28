@@ -7,7 +7,7 @@ import javax.swing.*;
 public class Graphic extends JFrame{
     private Panel panel;
     private JComboBox shapes;
-    private String shapeForm[]={"Line","Rectangle","Oval","Square","Circle","Triangle"};
+    private String shapeForm[]={"Line","Oval",  "Rectangle", "Square","Circle","Triangle"};
     private JPanel widgetJPanel;
     private JPanel widgetPadder;
     private JButton clear;
