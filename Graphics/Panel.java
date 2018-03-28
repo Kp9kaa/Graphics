@@ -51,11 +51,11 @@ public class Panel extends JPanel{
                     currentShapeObj= new Line( event.getX(), event.getY(), event.getX(), event.getY());
                     break;
                 case 1:
-                    currentShapeObj= new Rectangle( event.getX(), event.getY(),
+                    currentShapeObj= new Oval( event.getX(), event.getY(),
                             event.getX(), event.getY());
                     break;
                 case 2:
-                    currentShapeObj= new Oval( event.getX(), event.getY(),
+                    currentShapeObj= new Rectangle( event.getX(), event.getY(),
                             event.getX(), event.getY());
                     break;
                 case 3:
